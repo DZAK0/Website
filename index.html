@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BMR Calulator</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Calculate your calories!">
+	<meta name="keywords" content="TODO">
+	<meta name="author" content="Jacek Wojtowicz">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div id="landingpage">
+				<h1>Calculate your BMR</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+			</div>
+			<nav id="main-menu">
+					<a href="index.html">Home</a>
+					<a href="bmr.index">BMR</a>
+					<a href="proteins.index">proteins</a>
+					<a href="carbohydrates.index">carbohydrates</a>
+					<a href="fat.index">fat</a>
+			</nav>
+		</div>
+		<div id="showcase"></div>
+	</header>
+
+	<section>
+		<div class="container">
+			<div id="calculator">
+				<form action="process.php" method="POST">
+					<div>
+						<label>Weight</label>
+						Quantity:
+						<input type="number" name="weight" min="1" max="200" value="75">
+					</div>
+					<div>
+						<label>Height</label>
+						Quantity:
+						<input type="number" name="height" min="1" max="250" value="180">
+					</div>
+					<div>
+						<label>Gender</label>
+							<input type="radio" name="gender" value="male" checked> Male
+	  						<input type="radio" name="gender" value="female"> Female
+	 				</div>
+					<div>
+						<label>Age</label>
+						Quantity:
+						<input type="number" name="height" min="1" max="250" value="30">
+					</div>	
+				</form>	
+			</div>
+			<div id="sidebar">
+				<h2>Know your nutrients</h2>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="bmr.index">BMR</a></li>
+					<li><a href="proteins.index">proteins</a></li>
+					<li><a href="carbohydrates.index">Carbs</a></li>
+					<li><a href="fat.index">fat</a></li>
+				</ul>
+			</div>
+		</div>	
+	</section>
+
+	<footer>
+		<h3>Feedback</h3>
+		<p>Email or call us to set up a consult</p>
+		<p>Email: <strong>random@email.com</strong></p>
+		<p>Phone: <storng>123-456-789</storng></p>
+	</footer>
+	<script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
